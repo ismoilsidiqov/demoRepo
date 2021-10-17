@@ -1,0 +1,11 @@
+div {
+  width: 130px;
+  height: 150px;
+  background-color: brown;
+  border:2px solid chartreuse;
+  position: absolute;
+  top:35%;
+  left:40%;
+  border-radius: 20%;
+  
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tasbeh sanovchi qurilma</title>
+    <style>
+        .tasbeh {
+            width: 130px;
+            height: 150px;
+            background-color: brown;
+            border: 2px solid rgb(204, 0, 255);
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            border-radius: 20%;
+
+        }
+
+        .ekran {
+            width: 55%;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            height: 30px;
+            caret-color: white;
+            border-radius: 10%;
+            border: 1px solid floralwhite;
+            text-align: center;
+            font-size: 34px;
+
+        }
+
+        .tugma {
+            position: absolute;
+            top: 42%;
+            left: 35%;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background-color: red;
+            border: none;
+
+        }
+
+        .tugma2 {
+            position: absolute;
+            top: 75%;
+            left: 60%;
+            width: 29px;
+            height: 29px;
+            border-radius: 50%;
+            background-color: red;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tasbeh">
+        <input type="text" class="ekran" value="0">
+        <button class="tugma"></button>
+        <button class="tugma2"></button>
+    </div>
+    
+    <script>
+        document.querySelector(".tugma").addEventListener('click', function () {
+            var ekran = document.querySelector('.ekran');
+            console.log(typeof parseInt(ekran.value));
+            ekran.value = parseInt(ekran.value) + 1;
+        });
+        document.querySelector('.tugma2').addEventListener("click", function () {
+            document.querySelector('.ekran').value = 0;
+        })
+        alert("AllohuAkbar Alhamdulillah SubhanAlloh 33martadan aytasz kamida!")
+
+    </script>
+</body>
+
+</html>
